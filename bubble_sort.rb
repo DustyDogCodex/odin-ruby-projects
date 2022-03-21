@@ -9,7 +9,6 @@ def bubble_sort(array)
                 bubbled = true
             end 
             i += 1
-            puts bubbled
         end
     end
     print array
