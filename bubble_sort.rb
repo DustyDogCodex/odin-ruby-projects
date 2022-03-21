@@ -1,16 +1,16 @@
 def bubble_sort(array)
-    unsorted = true;
-    
-    while unsorted do
+    bubbled = true
+    while bubbled do
         i = 0
-        unsorted = false
-        (array.length-1).times do |i|
+        bubbled = false
+        while i < (array.length - 1)
             if array[i] > array[i+1]
                 array[i], array[i+1] = array[i], array[i+1]
-                unsorted = true
+                bubbled = true
             end 
+            i += 1
+            puts bubbled
         end
-        i += 1
     end
     print array
 end
